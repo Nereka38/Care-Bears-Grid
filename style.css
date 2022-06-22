@@ -1,114 +1,81 @@
-#container {
-  display: grid;
-  justify-content: center;
-  font-size: 38px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.container1 {  display: grid;
-   grid-template-columns: 420px 420px;
-   grid-template-rows: 200px;
+.container {display: grid;
+   justify-content: center;
+   grid-template-columns: 150px 150px 335px 150px;
+   grid-template-rows: 200px 200px 200px 200px;
    grid-auto-columns: 1fr;
    grid-auto-rows: 1fr;
-   gap: 40px 50px;
+   gap: 50px 50px;
    grid-auto-flow: row dense;
    grid-template-areas:
-     "Item-1 Item-2";
-   width: 1024px;
-   height: 240px;
- }
- 
-
- .Item-1 {
-   grid-area: Item-1;
-   border: pink solid;
+     "item1 item1 item2 item2"
+     "item3 item4 item5 item7"
+     "item6 item6 item5 item8"
+     "item9 item10 item11 item11";
+   height: 1440px;
+   
    text-align: center;
-}
-
- .Item-2 {
-   grid-area: Item-2;
-   border: pink solid;
-   background-image: url(/img/Foto\ 1.png);
-   background-size: cover;
-}
-
-.container2 {  display: grid;
-   grid-template-columns: 150px 150px 300px 150px;
-   grid-template-rows: 200px 200px;
-   grid-auto-columns: 1fr;
-   grid-auto-rows: 1fr;
-   gap: 40px 50px;
-   grid-auto-flow: row dense;
-   grid-template-areas:
-     "Item3 Item4 Item5 Item7"
-     "Item-6 Item-6 Item5 Item8";
-   width: 1024px;
-   height: 480px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 30px;
  }
- 
- .Item3 { grid-area: Item3; 
+ .item {
    border: pink solid;
-   background-image: url(/img/Foto\ 2.png);
    background-size: cover;
-}
- 
- .Item4 { grid-area: Item4; 
-   border: pink solid;
-   background-image: url(/img/Foto\ 3.png);
-   background-size: cover;
-}
- 
- .Item5 { grid-area: Item5; 
-   border: pink solid;
-   background-image: url(/img/Foto\ 4.png);
-   background-size: cover;
-}
- 
- .Item-6 { grid-area: Item-6; 
-   border: pink solid;
-   background-image: url(/img/Foto\ 5.png);
-   background-size: cover;
-}
- 
- .Item7 { grid-area: Item7; 
-   border: pink solid;
-   background-image: url(/img/Foto\ 6.png);
-   background-size: cover;
-}
- 
- .Item8 { grid-area: Item8;
-   border: pink solid;
-   background-image: url(/img/Foto\ 7.png);
-   background-size: cover;
-}
- 
-.container3 {  display: grid;
-   grid-template-columns: 150px 150px 520px;
-   grid-template-rows: 200px;
-   grid-auto-columns: 1fr;
-   grid-auto-rows: 1fr;
-   gap: 40px 50px;
-   grid-auto-flow: row dense;
-   grid-template-areas:
-     "Item8 Item9 Item10";
-   width: 1024px;
-   height: 456px;
  }
- 
- .Item8 { grid-area: Item8; 
-   border: pink solid;
-   background-image: url(/img/Foto\ 8.png);
-   background-size: cover;
+
+ .item1 {
+   grid-area: item1; 
 }
  
- .Item9 { grid-area: Item9;
-   border: pink solid;
-   background-image: url(/img/Foto\ 9.png);
-   background-size: cover;}
+ .item2 {
+   grid-area: item2;
+   background-image:url(/img/Foto\ 1.png);
+}
  
- .Item10 { grid-area: Item10;
-   border: pink solid;
-   background-image: url(/img/Foto\ 10.png);
-   background-size: cover;
+ .item3 {
+   grid-area: item3;
+   background-image:url(/img/Foto\ 2.png);
+}
+ 
+ .item4 {
+   grid-area: item4;
+   background-image:url(/img/Foto\ 3.png);
+
+}
+ 
+ .item5 {
+   grid-area: item5;
+   background-image:url(/img/Foto\ 4.png);
+   width: 335px; 
+  height: 448px; 
+}
+ 
+ .item6 {
+   grid-area: item6;
+   background-image:url(/img/Foto\ 5.png);
+}
+ 
+ .item7 {
+   grid-area: item7;
+   background-image:url(/img/Foto\ 6.png);
+}
+ 
+ .item8 {
+   grid-area: item8;
+   background-image:url(/img/Foto\ 7.png);
+}
+ 
+ .item9 {
+   grid-area: item9;
+   background-image:url(/img/Foto\ 8.png);
+}
+ 
+ .item10 {
+   grid-area: item10;
+   background-image:url(/img/Foto\ 9.png);
+}
+ 
+ .item11 {
+   grid-area: item11;
+   background-image:url(/img/Foto\ 10.png);
 }
  
